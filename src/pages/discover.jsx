@@ -54,7 +54,7 @@ const Discover = () => {
             {/* Server Card */}
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img
-                src="https://via.placeholder.com/300x150"
+                src="https://picsum.photos/300/150"
                 alt="Midjourney"
                 className="w-full h-40 object-cover"
               />
@@ -71,7 +71,7 @@ const Discover = () => {
 
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img
-                src="https://via.placeholder.com/300x150"
+                src="https://picsum.photos/300/152"
                 alt="Genshin Impact Official"
                 className="w-full h-40 object-cover"
               />
@@ -88,7 +88,7 @@ const Discover = () => {
 
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img
-                src="https://via.placeholder.com/300x150"
+                src="https://picsum.photos/300/151"
                 alt="Honkai: Star Rail Official"
                 className="w-full h-40 object-cover"
               />

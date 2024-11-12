@@ -1,12 +1,17 @@
 import { useState } from 'react'
-
-
+import Discover from './pages/discover'
+import LeftSidebar from './components/MainSide'
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      Hello
+        
+        <div className="flex flex-row bg-slate-800">
+        <LeftSidebar />
+        <Discover />
+          </div>
+          
     </>
   )
 }
