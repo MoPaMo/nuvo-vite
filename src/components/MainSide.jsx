@@ -3,6 +3,7 @@ import React from "react";
 import ServerIcon from "./ServerIcon";
 import SideBarDivider from "./SideBarDivider";
 import LeftSidebarButton from "./LeftSidebarButton";
+import { Link } from "react-router-dom";
 
 let imageSources = [
   "https://picsum.photos/400",
@@ -17,23 +18,22 @@ function LeftSidebar() {
   return (
     <div className="h-screen bg-gray-800 flex flex-col p-2 gap-2 pr-4">
       {/* Logo Button */}
-      
+
       {/* Server List */}
-          <div className="flex flex-col gap-2 overflow-scroll grow [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-
+      <div className="flex flex-col gap-2 overflow-scroll grow [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <Link to="/">
+          <div className="pl-4">
+            <div className="rounded-3xl hover:rounded-md aspect-square transition-all ease-in-out duration-400 cursor-pointer w-12 h-12 bg-blue-600 "></div>
+          </div>
+        </Link>
+        {/* Divider */}
         <div className="pl-4">
-          <div className="rounded-3xl hover:rounded-md aspect-square transition-all ease-in-out duration-400 cursor-pointer w-12 h-12 bg-blue-600 "></div>
+          <SideBarDivider color="bg-red-400" />
         </div>
-
-
-      {/* Divider */}
-      <div className="pl-4">
-        <SideBarDivider color="bg-red-400" />
-      </div>
-              {imageSources.map((src, index) => (
-
-                      <ServerIcon key={index} src={src} />
-
+        {imageSources.map((src, index) => (
+          <Link to="/chat">
+            <ServerIcon key={index} src={src} />
+          </Link>
         ))}
 
         {/* Add Button */}
@@ -49,9 +49,9 @@ function LeftSidebar() {
       </div>
 
       {/* Explore Button */}
-
+      <Link to="/discover">
         <LeftSidebarButton icon="explore" />
-
+      </Link>
     </div>
   );
 }
