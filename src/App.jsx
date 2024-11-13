@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Discover from './pages/discover'
+import Discover from './routes/discover'
 import LeftSidebar from './components/MainSide'
 function App() {
 
