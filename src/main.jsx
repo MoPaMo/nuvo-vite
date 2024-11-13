@@ -8,7 +8,7 @@ import Root from "./routes/Root.jsx";
 // pages
 import Discover from "./routes/discover.jsx";
 import ErrorPage from "./routes/error-page.jsx";
-import TextChannel from "./routes/chat.jsx";
+import Server from "./routes/server.jsx";
 import Home from "./routes/home.jsx";
 const router = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/chat",
-        element: <TextChannel />,
+        element: <Server />,
       },
       {
         path: "/",
