@@ -32,31 +32,31 @@ function ServerSidebar() {
         </div>
 
         {/* Text Channels */}
-        <ChannelSection name="Textkanäle">
-          <ChannelItem label="allgemein" type="text" mid="a" />
-          <ChannelItem label="clips-und-highlights" type="text" mid="b" />
-          <ChannelItem label="docs" type="text" mid="c" />
-          <ChannelItem label="links" type="text" mid="d" />
-          <ChannelItem label="ankündigungen" type="text" mid="e" />
-          <ChannelItem label="kanal-für-xp-spammen" type="text" mid="f" />
-          <ChannelItem label="privat" type="text" mid="g" />
-          <ChannelItem label="moritz-stats" type="text" mid="h" />
-          <ChannelItem label="git-changes" type="text" mid="i" />
-          <ChannelItem label="img" type="text" mid="j" />
+        <ChannelSection name="Text Channels">
+          <ChannelItem label="general" type="text" mid="a" />
+          <ChannelItem label="announcements" type="text" mid="b" />
+          <ChannelItem label="welcome" type="text" mid="c" />
+          <ChannelItem label="rules" type="text" mid="d" />
+          <ChannelItem label="chat" type="text" mid="e" />
+          <ChannelItem label="media" type="text" mid="f" />
+          <ChannelItem label="memes" type="text" mid="g" />
+          <ChannelItem label="resources" type="text" mid="h" />
+          <ChannelItem label="bot-commands" type="text" mid="i" />
+          <ChannelItem label="off-topic" type="text" mid="j" />
         </ChannelSection>
 
         {/* Voice Channels */}
-        <ChannelSection name="Sprachkanäle">
-          <ChannelItem label="allgemein" type="voice" isActive />
-          <ChannelItem label="clips-und-highlights" type="bots" />
-          <ChannelItem label="docs" type="text" />
-          <ChannelItem label="links" type="text" />
-          <ChannelItem label="ankündigungen" type="text" />
-          <ChannelItem label="kanal-für-xp-spammen" type="text" />
-          <ChannelItem label="privat" type="text" />
-          <ChannelItem label="moritz-stats" type="text" />
-          <ChannelItem label="git-changes" type="text" />
-          <ChannelItem label="img" type="text" />
+        <ChannelSection name="Voice Channels">
+          <ChannelItem label="General Voice" type="voice" isActive />
+          <ChannelItem label="Gaming" type="voice" />
+          <ChannelItem label="Music" type="voice" />
+          <ChannelItem label="AFK" type="voice" />
+          <ChannelItem label="Meeting Room 1" type="voice" />
+          <ChannelItem label="Meeting Room 2" type="voice" />
+          <ChannelItem label="Chill Zone" type="voice" />
+          <ChannelItem label="Study Room" type="voice" />
+          <ChannelItem label="Streaming" type="voice" />
+          <ChannelItem label="Events" type="voice" />
         </ChannelSection>
         {/* Bots Section */}
         <div className="section-title text-gray-500 text-xs uppercase mt-5 mb-2">

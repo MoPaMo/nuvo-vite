@@ -1,5 +1,5 @@
-import React from 'react';
-import { Search, Users, Compass } from 'lucide-react';
+import React from "react";
+import { Search, Users, Compass } from "lucide-react";
 
 const Discover = () => {
   return (
@@ -12,7 +12,7 @@ const Discover = () => {
         </div>
         <div className="flex items-center cursor-pointer">
           <Compass className="mr-3" />
-          <span>Quests</span>
+          <span>More</span>
         </div>
       </aside>
 
@@ -26,7 +26,7 @@ const Discover = () => {
             <li className="hover:text-white cursor-pointer">Music</li>
             <li className="hover:text-white cursor-pointer">Entertainment</li>
             <li className="hover:text-white cursor-pointer">Science & Tech</li>
-            <li className="hover:text-white cursor-pointer">Education</li>
+            <li className="hover:text-white cursor-pointer">Creative</li>
             <li className="hover:text-white cursor-pointer">Student Hubs</li>
           </ul>
           <div className="flex items-center bg-gray-700 rounded-lg p-2">
@@ -55,16 +55,18 @@ const Discover = () => {
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img
                 src="https://picsum.photos/300/150"
-                alt="Midjourney"
+                alt="Developers Hub"
                 className="w-full h-40 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold">Midjourney</h3>
+                <h3 className="text-lg font-semibold">Developers Hub</h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  The official server for Midjourney, a text-to-image AI where your imagination is the only limit.
+                  Join the largest community of developers. Share knowledge, get
+                  help, and collaborate on projects.
                 </p>
                 <div className="text-gray-500 text-xs mt-4">
-                  <span className="mr-2">🟢 974,614 Online</span> · <span>21,056,120 Members</span>
+                  <span className="mr-2">🟢 125,614 Online</span> ·{" "}
+                  <span>850,120 Members</span>
                 </div>
               </div>
             </div>
@@ -72,16 +74,18 @@ const Discover = () => {
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img
                 src="https://picsum.photos/300/152"
-                alt="Genshin Impact Official"
+                alt="Music Production"
                 className="w-full h-40 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold">Genshin Impact Official</h3>
+                <h3 className="text-lg font-semibold">Music Production</h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Welcome to Teyvat, Traveler! Discuss your favorite game: Genshin Impact!
+                  Connect with music producers, share your tracks, and get
+                  feedback from professionals.
                 </p>
                 <div className="text-gray-500 text-xs mt-4">
-                  <span className="mr-2">🟢 358,897 Online</span> · <span>1,967,493 Members</span>
+                  <span className="mr-2">🟢 45,897 Online</span> ·{" "}
+                  <span>267,493 Members</span>
                 </div>
               </div>
             </div>
@@ -89,16 +93,18 @@ const Discover = () => {
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img
                 src="https://picsum.photos/300/151"
-                alt="Honkai: Star Rail Official"
+                alt="Art & Design"
                 className="w-full h-40 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold">Honkai: Star Rail Official</h3>
+                <h3 className="text-lg font-semibold">Art & Design</h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Hop aboard the Astral Express and explore the galaxy's wonders!
+                  A creative space for artists and designers to showcase work
+                  and exchange ideas.
                 </p>
                 <div className="text-gray-500 text-xs mt-4">
-                  <span className="mr-2">🟢 277,054 Online</span> · <span>1,240,951 Members</span>
+                  <span className="mr-2">🟢 87,054 Online</span> ·{" "}
+                  <span>440,951 Members</span>
                 </div>
               </div>
             </div>
