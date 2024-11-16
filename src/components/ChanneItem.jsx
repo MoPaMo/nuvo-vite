@@ -2,7 +2,7 @@
 import React from "react";
 import { Hash, Bot, Volume2, CircleHelp } from "lucide-react";
 import { Link } from "react-router-dom";
-function ChannelItem({ label, type, mid }) {
+function ChannelItem({ label, type, isActive=false }) {
   const getIcon = () => {
     switch (type) {
       case "text":
@@ -15,9 +15,20 @@ function ChannelItem({ label, type, mid }) {
         return <CircleHelp size={24} strokeWidth={2} />;
     }
   };
-  let isActive = false;
+    const reolveType = () => {
+        switch (type) {
+            case "text":
+                return "text";
+            case "bots":
+                return "text";
+            case "voice":
+                return "call";
+            default:
+                return "text";
+        }
+    };
   return (
-    <Link to={`/server/${mid}`}>
+    <Link to={`/chat/${reolveType()}`}>
       <div
         className={`channel flex items-center p-2 text-gray-300 cursor-pointer rounded hover:bg-gray-600 transition duration-200 ${
           isActive ? "bg-gray-700" : ""
