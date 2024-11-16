@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 
 const VideoCallUI = () => {
+    console.log("VideoCallUI.jsx");
   return (
     <div className="bg-black min-h-screen text-white">
       {/* Top bar */}
