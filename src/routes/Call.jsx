@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Users,
   Grid,
@@ -9,13 +9,13 @@ import {
   SunMedium,
   SmilePlus,
   ChevronDown,
-  MessageSquare
-} from 'lucide-react';
+  MessageSquare,
+} from "lucide-react";
 
 const VideoCallUI = () => {
-    console.log("VideoCallUI.jsx");
+  console.log("VideoCallUI.jsx");
   return (
-    <div className="bg-black min-h-screen text-white">
+    <div className="bg-black min-h-screen text-white w-screen">
       {/* Top bar */}
       <div className="flex justify-between items-center p-4">
         <div className="flex items-center gap-2">
@@ -48,7 +48,7 @@ const VideoCallUI = () => {
         <div className="bg-gray-900 rounded-lg p-8 text-center">
           <div className="flex justify-center mb-4">
             <img
-              src="/api/placeholder/120/80"
+              src="/call.svg"
               alt="Empty state illustration"
               className="w-32"
             />
@@ -89,9 +89,7 @@ const VideoCallUI = () => {
           <button className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full">
             <Users className="h-6 w-6" />
           </button>
-          <button className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full">
-            <Share className="h-6 w-6" />
-          </button>
+          
           <button className="p-3 bg-white hover:bg-gray-100 rounded-full">
             <Mic className="h-6 w-6 text-black" />
           </button>
