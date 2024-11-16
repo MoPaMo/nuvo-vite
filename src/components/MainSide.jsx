@@ -1,4 +1,3 @@
-// src/components/MainSide
 import React from "react";
 import ServerIcon from "./ServerIcon";
 import SideBarDivider from "./SideBarDivider";
@@ -12,7 +11,6 @@ let imageSources = [
   "https://picsum.photos/700",
   "https://picsum.photos/400?a",
 ];
-imageSources = imageSources.concat(imageSources).concat(imageSources);
 
 function LeftSidebar() {
   return (
@@ -31,8 +29,8 @@ function LeftSidebar() {
           <SideBarDivider color="bg-red-400" />
         </div>
         {imageSources.map((src, index) => (
-          <Link to="/chat">
-            <ServerIcon key={index} src={src} />
+          <Link to="/chat" key={index}>
+            <ServerIcon src={src} />
           </Link>
         ))}
 

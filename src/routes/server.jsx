@@ -4,11 +4,12 @@ import React, { useEffect } from "react";
 import TextChannel from "./chat";
 import ServerSidebar from "../components/ServerSidebar";
 
-export default function Server() {
-  return (
-    <div className="flex flex-row h-screen bg-slate-800 w-full">
-      <ServerSidebar />
-      <TextChannel />
-    </div>
-  );
+export default function Server({ children }) {
+    return (
+      <div className="flex flex-row h-screen bg-slate-800 w-full">
+        <ServerSidebar />
+        {children}
+      </div>
+    );
 }
+  
