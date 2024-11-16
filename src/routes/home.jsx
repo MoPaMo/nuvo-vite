@@ -36,52 +36,61 @@ const HomePage = () => {
           <div>+</div>
         </div>
         <div className="space-y-2">
-          {["Melonhero", "Paulus", "MonkGyatso", "corvus", "Pro37HD"].map(
-            (name, idx) => (
-              <button
-                key={idx}
-                className="flex items-center hover:bg-gray-700 p-2 pt-0 rounded w-full"
-              >
-                <User className="w-8 h-8 rounded-full bg-gray-600 p-1 mr-2" />
-                <span>{name}</span>
-              </button>
-            )
-          )}
+          {[
+            "ShadowHunter",
+            "PixelWarrior",
+            "EpicGamer123",
+            "NinjaAssassin",
+            "DragonSlayer",
+            "StealthySniper",
+            "CosmicRanger",
+            "VortexViper",
+            "ThunderStrike",
+            "MysticMage",
+          ].map((name, idx) => (
+            <button
+              key={idx}
+              className="flex items-center hover:bg-gray-700 p-2 pt-0 rounded w-full"
+            >
+              <User className="w-8 h-8 rounded-full bg-gray-600 p-1 mr-2" />
+              <span>{name}</span>
+            </button>
+          ))}
         </div>
       </div>
 
       {/* Main content */}
       <div className="flex-1 flex flex-col">
         {/* Header */}
-            <div className="flex items-center justify-between bg-gray-700 p-4 sticky ">
-              <div className="flex items-center space-x-4">
-                <span className="flex items-center p-2 rounded text-gray-400">
-                  <Users className="w-5 h-5 mr-2" /> Friends
-                </span>
-                <button className="bg-gray-700 p-2 rounded text-sm text-gray-400 hover:text-white">
-                  Online
-                      </button>
-                <button className="bg-gray-700 p-2 rounded text-sm text-gray-400 hover:text-white">
-                  All
-                </button>
-                <button className="bg-gray-700 p-2 rounded text-sm text-gray-400 hover:text-white">
-                  Pending
-                </button>
-                <button className="bg-gray-700 p-2 rounded text-sm text-gray-400 hover:text-white">
-                  Blocked
-                </button>
-                <button className="bg-green-500 p-2 rounded text-sm">
-                  Add Friend
-                </button>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Search className="w-5 h-5 text-gray-400 hover:text-white" />
-                <Bell className="w-5 h-5 text-gray-400 hover:text-white" />
-                <HelpCircle className="w-5 h-5 text-gray-400 hover:text-white" />
-              </div>
-            </div>
+        <div className="flex items-center justify-between bg-gray-700 p-4 sticky ">
+          <div className="flex items-center space-x-4">
+            <span className="flex items-center p-2 rounded text-gray-400">
+              <Users className="w-5 h-5 mr-2" /> Friends
+            </span>
+            <button className="bg-gray-700 p-2 rounded text-sm text-gray-400 hover:text-white">
+              Online
+            </button>
+            <button className="bg-gray-700 p-2 rounded text-sm text-gray-400 hover:text-white">
+              All
+            </button>
+            <button className="bg-gray-700 p-2 rounded text-sm text-gray-400 hover:text-white">
+              Pending
+            </button>
+            <button className="bg-gray-700 p-2 rounded text-sm text-gray-400 hover:text-white">
+              Blocked
+            </button>
+            <button className="bg-green-500 p-2 rounded text-sm">
+              Add Friend
+            </button>
+          </div>
+          <div className="flex items-center space-x-3">
+            <Search className="w-5 h-5 text-gray-400 hover:text-white" />
+            <Bell className="w-5 h-5 text-gray-400 hover:text-white" />
+            <HelpCircle className="w-5 h-5 text-gray-400 hover:text-white" />
+          </div>
+        </div>
 
-            {/* Friends List */}
+        {/* Friends List */}
         <div className="flex-1 bg-gray-800 p-4 flex ">
           {/* Online friends */}
           <div className="flex-1 space-y-2 ">
@@ -96,7 +105,7 @@ const HomePage = () => {
             <div className="flex items-center justify-between hover:bg-gray-700 p-2 rounded">
               <div className="flex items-center">
                 <User className="w-8 h-8 rounded-full bg-gray-600 p-1 mr-2" />
-                <span>Pro37HD</span>
+                <span>Pro47HD</span>
               </div>
               <MoreVertical className="w-5 h-5 text-gray-400 hover:text-white" />
             </div>

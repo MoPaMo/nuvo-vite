@@ -43,10 +43,10 @@ const TextChannel = () => {
             </span>
           </div>
           <h1 className="text-2xl font-bold text-gray-200 mb-2">
-            Welcome to #zocken!
+            Welcome to #chat!
           </h1>
           <p className="text-gray-400">
-            This is the start of the #zocken channel.
+            This is the start of the #chat channel.
           </p>
           <div className="text-xs text-gray-500 mt-2">August 17, 2022</div>
         </div>
@@ -56,7 +56,7 @@ const TextChannel = () => {
           <div className="w-10 h-10 bg-gray-700 rounded-full flex-shrink-0" />
           <div>
             <div className="flex items-center space-x-2">
-              <span className="text-orange-400 font-medium">Hexenjäger</span>
+              <span className="text-orange-400 font-medium">Trollmater40</span>
               <span className="text-xs text-gray-500">8/17/22, 5:16 PM</span>
             </div>
             <p className="text-gray-300">moin</p>
